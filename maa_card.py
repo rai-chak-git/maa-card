@@ -4,7 +4,7 @@ import time
 # --- Page Configuration ---
 st.set_page_config(page_title="For Maa 💖", page_icon="🌸", layout="centered")
 
-# --- Custom Styling for Animations & Card ---
+# --- Custom Styling ---
 st.markdown("""
     <style>
     .stApp {
@@ -16,55 +16,48 @@ st.markdown("""
         text-align: center;
         font-size: 45px;
         font-weight: bold;
-        margin-top: 100px;
-        animation: fadeIn 2s;
+        margin-top: 80px;
     }
     .card-container {
-        border: 10px double #ffb6c1;
-        padding: 40px;
+        border: 8px double #ffb6c1;
+        padding: 30px;
         background-color: white;
         border-radius: 15px;
-        font-family: 'Palatino', serif;
+        font-family: 'serif';
         color: #333;
         line-height: 1.6;
         box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-    @keyframes fadeIn {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
+        text-align: left;
     }
     </style>
     """, unsafe_allow_html=True)
 
-# --- Session State to manage page transitions ---
+# --- State Management ---
 if 'page' not in st.session_state:
     st.session_state.page = 1
 
 def next_page():
     st.session_state.page += 1
 
-# --- Logic for Transitions ---
+# --- Page Logic ---
 
-# PAGE 1: Intro
 if st.session_state.page == 1:
     st.markdown('<div class="main-title">Happy Mother\'s Day <br> to my beautiful Maa 🌸</div>', unsafe_allow_html=True)
-    st.write("<br><br>", unsafe_allow_html=True)
+    st.write("<br>", unsafe_allow_html=True)
     if st.button("Open your gift ➔"):
         next_page()
         st.rerun()
 
-# PAGE 2: The Hook
 elif st.session_state.page == 2:
     st.markdown('<div class="main-title">I have a surprise for you... 🎁</div>', unsafe_allow_html=True)
-    st.write("<br><br>", unsafe_allow_html=True)
+    st.write("<br>", unsafe_allow_html=True)
     if st.button("What is it? ➔"):
         next_page()
         st.rerun()
 
-# PAGE 3: The Question
 elif st.session_state.page == 3:
     st.markdown('<div class="main-title">Are you ready to receive the surprise?</div>', unsafe_allow_html=True)
-    st.write("<br><br>", unsafe_allow_html=True)
+    st.write("<br>", unsafe_allow_html=True)
     col1, col2 = st.columns(2)
     with col1:
         if st.button("Yes! ✅"):
@@ -75,12 +68,13 @@ elif st.session_state.page == 3:
             next_page()
             st.rerun()
 
-# PAGE 4: The Digital Card
 elif st.session_state.page == 4:
     st.balloons()
+    
+    # We use st.markdown with unsafe_allow_html=True to make the card look beautiful
     st.markdown("""
     <div class="card-container">
-        <h2 style="text-align:center; color:#d63384;">💖 The love that never fails 💖</h2>
+        <h2 style="text-align:center; color:#d63384; font-family: serif;">💖 The love that never fails 💖</h2>
         <hr style="border: 1px solid #ffb6c1;">
         
         <p>My Dearest Maa,</p>
@@ -103,20 +97,21 @@ elif st.session_state.page == 4:
         <p>🌟 <b>If I had to pick the one meal you make that tastes like home:</b><br>
         It would definitely be your <b>Aalu posto</b>. Nothing else compares!</p>
 
-        <p>Above all, I just want you to know how much I appreciate your <b>Patience and believe</b>.</p>
+        <p>Above all, I just want you to know how much I appreciate your <b>Patience and belief</b>.</p>
 
         <p>I love you more than words can say.</p>
         
-        <p style="text-align:right;">
+        <div style="text-align:right; margin-top: 20px;">
             <b>All my love,</b><br>
             <b>Babin</b><br>
             May 10, 2026
-        </p>
+        </div>
     </div>
     """, unsafe_allow_html=True)
     
-    st.write("---")
-    # Display the hug gif at the end
-    st.image("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2o0Zmt4ZzRndmN4ZzRndmN4ZzRndmN4ZzRndmN4ZzRndmN4ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Vz58J8shFW6BvqnYTz/giphy.gif", use_column_width=True)
-    st.markdown("<h3 style='text-align:center; color:#d63384;'>Sending you a huge hug! 🤗</h3>", unsafe_allow_html=True)
+    st.write("<br>", unsafe_allow_html=True)
+    # The Hug GIF
+    st.image("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2o0Zmt4ZzRndmN4ZzRndmN4ZzRndmN4ZzRndmN4ZzRndmN4ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Vz58J8shFW6BvqnYTz/giphy.gif")
+    st.markdown("<p style='text-align:center; color:#d63384; font-weight:bold;'>Sending you a huge hug! 🤗</p>", unsafe_allow_html=True)
+
 
