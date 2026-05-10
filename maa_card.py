@@ -82,22 +82,29 @@ elif st.session_state.page == 4:
         <p><b>My Dearest Maa,</b></p>
         <p>Happy Mother's Day! Today is all about celebrating you. As I was thinking about everything you mean to me, a few special things came to mind:</p>
         
-        <p><b>One of my absolute favorite memories:</b><br>
-        The winter afternoons we had spent together among the Merigold garden when I was younger. That moment always brings a smile to my face.</p>
-        
-        <p><b>Words that describe you best:</b><br>
+        <p>🌟 <b>One of my absolute favorite memories:</b><br>
+        The winter afternoons we had spent together among the Merigold garden when I was younger. 
+        That moment always brings a smile to my face.</p>
+
+        <p>🌟 <b>Words that describe you best:</b><br>
         I think of how remarkably <b>Most powerful</b> and truly <b>Most beautiful</b> you are.</p>
-        
-        <p><b>Thank you for teaching me:</b><br>
-        How to see the good things in any kind of places or situations. That lesson has shaped who I am today.</p>
-        
-        <p><b>Taste of home:</b><br>
+
+        <p>🌟 <b>Thank you for teaching me:</b><br>
+        How to see the good things in any kind of places or situations. 
+        That lesson has shaped who I am today.</p>
+
+        <p>🌟 <b>Taste of home:</b><br>
         It would definitely be your <b>Aalu posto</b>. Nothing else compares!</p>
-        
+
         <p>Above all, I just want you to know how much I appreciate your <b>Patience and belief</b>.</p>
-        
+
         <p>I love you more than words can say.</p>
-        <p style="text-align:right;"><b>All my love,<br>Babin</b><br>May 08, 2026</p>
+        
+        <p style="text-align:right;">
+            <b>All my love,</b><br>
+            <b>Babin</b><br>
+            May 10, 2026
+        </p>
     </div>
     """, unsafe_allow_html=True)
     
