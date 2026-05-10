@@ -68,7 +68,7 @@ elif st.session_state.page == 3:
             next_page()
             st.rerun()
     with col2:
-        if st.button("Option One"): # As requested
+        if st.button("You can't say no"): # As requested
             next_page()
             st.rerun()
 
@@ -77,30 +77,30 @@ elif st.session_state.page == 4:
     st.balloons()
     st.markdown("""
     <div class="card-container">
-        <h2 style="text-align:center; color:#d63384;">💖 A SPECIAL MOTHER'S DAY TRIBUTE 💖</h2>
+        <h2 style="text-align:center; color:#d63384;">♥️ The love that never fails ♥️</h2>
         <hr style="border: 1px solid #ffb6c1;">
         <p><b>My Dearest Maa,</b></p>
         <p>Happy Mother's Day! Today is all about celebrating you. As I was thinking about everything you mean to me, a few special things came to mind:</p>
         
-        <p>🌟 <b>One of my absolute favorite memories:</b><br>
+        <p><b>One of my absolute favorite memories:</b><br>
         The winter afternoons we had spent together among the Merigold garden when I was younger. That moment always brings a smile to my face.</p>
         
-        <p>🌟 <b>Words that describe you best:</b><br>
+        <p><b>Words that describe you best:</b><br>
         I think of how remarkably <b>Most powerful</b> and truly <b>Most beautiful</b> you are.</p>
         
-        <p>🌟 <b>Thank you for teaching me:</b><br>
+        <p><b>Thank you for teaching me:</b><br>
         How to see the good things in any kind of places or situations. That lesson has shaped who I am today.</p>
         
-        <p>🌟 <b>Taste of home:</b><br>
+        <p><b>Taste of home:</b><br>
         It would definitely be your <b>Aalu posto</b>. Nothing else compares!</p>
         
         <p>Above all, I just want you to know how much I appreciate your <b>Patience and belief</b>.</p>
         
         <p>I love you more than words can say.</p>
-        <p style="text-align:right;"><b>All my love,<br>Babin</b><br>May 12, 2024</p>
+        <p style="text-align:right;"><b>All my love,<br>Babin</b><br>May 08, 2026</p>
     </div>
     """, unsafe_allow_html=True)
     
     st.write("---")
     # Display the hug gif at the end
-    st.image("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2o0Zmt4ZzRndmN4ZzRndmN4ZzRndmN4ZzRndmN4ZzRndmN4ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Vz58J8shFW6BvqnYTz/giphy.gif", caption="A big hug for you!")
+    st.image("https://giphy.com/stickers/binigames-love-binibambini-bini-bambini-4YgftnELbO7aTjsElS", caption="A big hug for you!")
